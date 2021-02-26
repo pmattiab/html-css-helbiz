@@ -262,7 +262,7 @@
     }
 
  /* hidden col on small screen */
-.xs-hidden {
-    display: none;
+    .xs-hidden {
+        display: none;
     }
 }
