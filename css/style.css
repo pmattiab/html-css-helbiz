@@ -102,7 +102,7 @@ header .burger_menu {
 }
 
 #products .content-col img {
-    width: 90%;
+    width: 80%;
 }
 
 #products h2 {
@@ -117,4 +117,53 @@ header .burger_menu {
 
 #products a {
     font-size: 18px;
+}
+
+/* sezione come */
+#phone {
+    height: 400px;
+    background-image: url(../img/HelbizBanner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#phone img {
+    height: 522px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+
+#how {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#how .content-col h3 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#how .content-col h4 {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+#how .content-col p {
+    font-size: 14px;
+}
+
+/* #how .content-col {
+    text-align: left;
+} */
+
+@media all and (max-width: 1169px) {
+    #how {
+        padding-top: 230px;
+    }
+
+    #how .content-col {
+        margin-top: 30px;
+    }
 }
