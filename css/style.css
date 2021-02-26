@@ -24,6 +24,10 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.teaser {
+    text-align: center;
+}
+
 /* HEADER */
 
 header .top_nav {
@@ -119,7 +123,7 @@ header .burger_menu {
     font-size: 18px;
 }
 
-/* sezione come */
+/* sezione telefono */
 #phone {
     height: 400px;
     background-image: url(../img/HelbizBanner.jpg);
@@ -135,6 +139,7 @@ header .burger_menu {
     top: 150px;
 }
 
+/* sezione come */
 #how {
     text-align: center;
     padding: 100px 0;
@@ -154,16 +159,40 @@ header .burger_menu {
     font-size: 14px;
 }
 
-/* #how .content-col {
-    text-align: left;
-} */
-
+/* media query sezione come */
 @media all and (max-width: 1169px) {
     #how {
         padding-top: 230px;
+        padding-bottom: 30px;
     }
 
     #how .content-col {
         margin-top: 30px;
     }
+}
+
+/* sezione description */
+#description {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#description .content-col {
+    height: 500px;
+    background-image: url(../img/ScooterHelbiz-2400.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#description .teaser {
+    color: white;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#description .teaser a {
+    color: white;
 }

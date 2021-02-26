@@ -25,6 +25,10 @@
     float: left;
 }
 
+.container [class*="col-"] {
+    height: 100%;
+}
+
 /* responsive on large screen */
 @media screen and (min-width: 1170px) {
     .col-lg-1 {
