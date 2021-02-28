@@ -13,6 +13,14 @@ body {
     list-style-type: none;
 }
 
+.white_text {
+    color: white;
+}
+
+.font_20 {
+    font-size: 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -70,7 +78,6 @@ header .burger_menu {
     background-size: cover;
     background-position: center;
     height: 550px;
-    color: white;
     text-align: center;
     position: relative;
 }
@@ -88,7 +95,16 @@ header .burger_menu {
     margin: 1px;
 }
 
+#huawei_img img {
+    width: 165px;
+}
+
 /* MAIN */
+
+main h3 {
+    font-size: 30px;
+    font-weight: 100;
+}
 
 /* sezione prodotti */
 #products {
@@ -105,8 +121,8 @@ header .burger_menu {
     padding: 70px 0;
 }
 
-#products .content-col img {
-    width: 80%;
+#products img {
+    width: 70%;
 }
 
 #products h2 {
@@ -132,22 +148,18 @@ header .burger_menu {
 }
 
 #phone img {
-    height: 522px;
+    height: 600px;
+    width: auto;
     display: block;
     margin: auto;
     position: relative;
-    top: 150px;
+    top: 100px;
 }
 
 /* sezione come */
 #how {
     text-align: center;
     padding: 100px 0;
-}
-
-#how .content-col h3 {
-    font-size: 30px;
-    font-weight: 100;
 }
 
 #how .content-col h4 {
@@ -157,18 +169,6 @@ header .burger_menu {
 
 #how .content-col p {
     font-size: 14px;
-}
-
-/* media query sezione come */
-@media all and (max-width: 1169px) {
-    #how {
-        padding-top: 230px;
-        padding-bottom: 30px;
-    }
-
-    #how .content-col {
-        margin-top: 30px;
-    }
 }
 
 /* sezione description */
@@ -186,13 +186,143 @@ header .burger_menu {
 }
 
 #description .teaser {
-    color: white;
     position: absolute;
     left: 75%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-#description .teaser a {
-    color: white;
+#description .teaser h2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#description .teaser p {
+    font-weight: 100;
+}
+
+/* sezione contacts */
+#contacts .inner-col {
+    height: 440px;
+    text-align: center;
+}
+
+#contacts #app {
+    padding-right: 20px;
+}
+
+#contacts #find_us {
+    padding-left: 20px;
+}
+
+#contacts .content-col {
+    padding-top: 35px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#contacts #app .content-col {
+    background-image: linear-gradient(#41566a, #263038);
+}
+
+#contacts #app img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#contacts #find_us .content-col {
+    background-image: url(../img/cities-1500.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#contacts p {
+    margin: 20px 0;
+}
+
+/* sezione social */
+#social {
+    height: 400px;
+    margin: 30px 0;
+    background-image: url(../img/Social-Banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#social .social_tag {
+    padding: 60px 130px;
+    background-color: white;
+}
+
+#social .social_tag h4 {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+#social .menu a {
+    margin-right: 11%;
+    font-size: 30px;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    height: 535px;
+    background-color: black;
+    padding: 100px;
+}
+
+footer .nav_title {
+    font-size: 17px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+footer .menu a {
+    font-size: 15px;
+    color: gray;
+    line-height: 40px;
+}
+
+/* media query sezione come */
+@media all and (max-width: 1169px) {
+
+    header .burger_menu {
+        padding-right: 20px;
+    }
+
+    header .logo {
+        padding: 10px 20px;
+    }
+
+    .jumbotron .menu li {
+        display: block;
+    }
+
+    #products img {
+        width: 60%;
+    }
+
+    #how {
+        padding-top: 230px;
+        padding-bottom: 30px;
+    }
+
+    #how .content-col {
+        margin-top: 30px;
+    }
+
+    #description .teaser {
+        left: 50%;
+    }
+
+    #contacts #app {
+        padding-left: 20px;
+    }
+    
+    #contacts #find_us {
+        padding-right: 20px;
+    }
 }
