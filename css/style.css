@@ -6,7 +6,11 @@ body {
 
 .small-wrapper {
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
 }
 
 .menu {
@@ -36,10 +40,15 @@ a {
     text-align: center;
 }
 
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
 /* HEADER */
 
 header .top_nav {
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
 header nav {
@@ -91,12 +100,9 @@ header .burger_menu {
     margin: 25px 0;
 }
 
-.teaser .menu li {
-    margin: 1px;
-}
-
-#huawei_img img {
+.download.menu img {
     width: 165px;
+    height: auto;
 }
 
 /* MAIN */
@@ -122,7 +128,8 @@ main h3 {
 }
 
 #products img {
-    width: 70%;
+    width: 500px;
+    height: auto;
 }
 
 #products h2 {
@@ -225,11 +232,6 @@ main h3 {
     background-image: linear-gradient(#41566a, #263038);
 }
 
-#contacts #app img {
-    width: 100%;
-    object-fit: cover;
-}
-
 #contacts #find_us .content-col {
     background-image: url(../img/cities-1500.jpg);
     background-size: cover;
@@ -268,7 +270,6 @@ main h3 {
 
 /* FOOTER */
 footer {
-    height: 535px;
     background-color: black;
     padding: 100px;
 }
@@ -283,7 +284,45 @@ footer .nav_title {
 footer .menu a {
     font-size: 15px;
     color: gray;
-    line-height: 40px;
+    line-height: 35px;
+}
+
+.central_footer a,
+.central_footer span {
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+}
+
+footer .central_footer {
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+}
+
+.central_footer .social_menu li {
+    display: inline-block;
+    padding-right: 7%;
+}
+
+.central_footer .social_menu li a {
+    font-size: 23px;
+    color: white;
+}
+
+footer .download {
+    text-align: center;
+}
+
+footer .download li {
+    padding-top: 40px;
+    display: inline-block;
+}
+
+footer .download img {
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 /* media query sezione come */
@@ -295,10 +334,6 @@ footer .menu a {
 
     header .logo {
         padding: 10px 20px;
-    }
-
-    .jumbotron .menu li {
-        display: block;
     }
 
     #products img {
@@ -324,5 +359,41 @@ footer .menu a {
     
     #contacts #find_us {
         padding-right: 20px;
+    }
+
+    footer .top_nav .menu {
+        margin-bottom: 40px;
+    }
+
+    footer .central_footer {
+        padding: 20px 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    footer .central_footer {
+        padding: 20px 0;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    footer .central_footer ul {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .central_footer a,
+    .central_footer span {
+        line-height: 30px;
+    }
+
+    footer .download {
+        padding-top: 30px;
+    }
+
+    footer .download li {
+        padding-top: 0;
     }
 }
